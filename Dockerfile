@@ -4,10 +4,10 @@ FROM openjdk:8u171
 
 LABEL maintainer="gregunz <contact@gregunz.io>"
 
-ENV SCALA_VERSION 2.12.6 \
-	SBT_VERSION 1.1.5
+ENV SCALA_VERSION=2.12.6 \
+	SBT_VERSION=1.1.5 \
+	SCALA_HOME=/opt/scala
 
-ENV SCALA_HOME /opt/scala
 ENV PATH=$SCALA_HOME/$SCALA_VERSION/bin:$PATH
 
 # install scala
